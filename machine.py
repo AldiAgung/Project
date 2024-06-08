@@ -1,8 +1,5 @@
-import pandas as panda
-import numpy as np
 from tampilan import tampilan
-from flask import Flask as fk, request, render_template
-import pickle
+from flask import Flask as fk, request
 
 app = fk(__name__)
 app.register_blueprint(tampilan, url_prefix = "/tampilan")
