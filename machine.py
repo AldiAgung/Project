@@ -1,13 +1,11 @@
 import pandas as panda
 import numpy as np
-from flask import Flask as fk, request
+from tampilan import tampilan
+from flask import Flask as fk, request, render_template
 import pickle
 
 app = fk(__name__)
-
-@app.route("/")
-def hallo():
-    return "halo ini adalah halaman utama <h1> HALLO <h1>"
+app.register_blueprint(tampilan, url_prefix = "/tampilan")
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug =  True, port = 8000)
