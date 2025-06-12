@@ -1,5 +1,5 @@
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.756), );
+    background-image: linear-gradient(rgba(0, 0, 0, 0.488), rgb(233, 47, 47));
 }
 
 .pilihan-navigasi{
@@ -23,7 +23,7 @@ body{
     display: block;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
-    color: linear-gradient(rgb(218, 53, 53), rgba(6, 6, 6, 0.938));
+    color: linear-gradient(rgb(207, 145, 145), rgba(6, 6, 6, 0.938));
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -35,4 +35,14 @@ body{
     box-shadow: 5px;
     text-decoration: underline;
     text-decoration-color: rgba(208, 112, 95, 0.816);
+}
+
+.h1{
+    margin-left: 4em;
+    position: relative;
+    descent-override: d
+    d
+    d
+    d
+    d;
 }
