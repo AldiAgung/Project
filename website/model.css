@@ -1,0 +1,38 @@
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.756), );
+}
+
+.pilihan-navigasi{
+    text-align: right;
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
+    /* background-color: rgba(161, 209, 193, 0.674); */
+    margin-right: 5em;
+    text-decoration: underline;
+    text-decoration-thickness: 0.5px;
+    text-underline-offset: 25%;
+}
+
+.navigasi{
+    float: right;
+}
+
+.Link{
+    display: block;
+    font-weight: bold;
+    font-family: 'Inter', sans-serif;
+    color: linear-gradient(rgb(218, 53, 53), rgba(6, 6, 6, 0.938));
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.Link:hover{
+    /* background-image: linear-gradient(rgba(196, 212, 94, 0.464),rgba(68, 190, 193, 0.556)); */
+    border-radius: 5px;
+    box-shadow: 5px;
+    text-decoration: underline;
+    text-decoration-color: rgba(208, 112, 95, 0.816);
+}
