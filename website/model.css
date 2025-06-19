@@ -1,48 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    line-height: 1.5rem;
+}
+
+.konten-utama {
+    padding: 20px;
+    margin-top: 1em;
+}
+
+h1{
+    margin-left: 4em;
+    margin-bottom: 1em;
+}
+
 body{
-    background-image: linear-gradient(rgba(0, 0, 0, 0.488), rgb(233, 47, 47));
+    background-image: linear-gradient(rgba(231, 136, 136, 0.499), rgba(233, 47, 47, 0.547));
+    /* background-repeat: no-repeat */
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: grid;
+    grid-template-columns: auto 1fr;
 }
 
-.pilihan-navigasi{
-    text-align: right;
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    overflow: hidden;
-    /* background-color: rgba(161, 209, 193, 0.674); */
-    margin-right: 5em;
-    text-decoration: underline;
-    text-decoration-thickness: 0.5px;
-    text-underline-offset: 25%;
+.bar-samping{
+    box-sizing: border-box;
+    height: 100vh;
+    width: 170px;
+    text-decoration-color: rgb(83, 113, 170);
+    padding: 5px 1em;
+    font-weight: bold;
+    background-color: rgb(142, 220, 220);
+    border-right: 1px solid red;
 }
 
-.navigasi{
+.bar-samping ul{
+    list-style: none;
+}
+
+.bar-samping > ul > li:all{
+    display: flex-end;
+    margin-top: 10em;
+
+}
+
+.bar-samping ul li.active a{
+    color: rgb(211, 118, 79);
+}
+
+.bar-samping a {
+    border-radius: .5em;
+    padding: .85em;
+    text-decoration: none;
+    color: rgb(92, 145, 180);
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+/* .navigasi{
     float: right;
-}
+} */
 
-.Link{
+/* .Link{
     display: block;
     font-weight: bold;
     font-family: 'Inter', sans-serif;
-    color: linear-gradient(rgb(207, 145, 145), rgba(6, 6, 6, 0.938));
+    color: rgb(208, 79, 79);
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
 .Link:hover{
-    /* background-image: linear-gradient(rgba(196, 212, 94, 0.464),rgba(68, 190, 193, 0.556)); */
     border-radius: 5px;
     box-shadow: 5px;
     text-decoration: underline;
     text-decoration-color: rgba(208, 112, 95, 0.816);
+} */
+
+/* h1{
+    position: relative;
+    margin-top: 2em
+} */
+
+.Informasi {
+    padding: min(2em 15%);
+    border-radius: 1em;
+    border: 1px solid;
+    max-width: fit-content;
+    margin-bottom: 20px;
 }
 
-.h1{
-    margin-left: 4em;
-    position: relative;
-    descent-override: d
-    d
-    d
-    d
-    d;
+.Informasi p {
+    margin-top: 5px;
+    margin-left: 1em;
+    position: justify;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    margin-bottom: 15px;
 }
