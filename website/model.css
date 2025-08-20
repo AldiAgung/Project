@@ -13,7 +13,8 @@ html{
 }
 
 h1{
-    margin-left: 4em;
+    margin-left: 15em;
+    position: middle;
     margin-bottom: 1em;
 }
 
@@ -29,16 +30,17 @@ body{
 .bar-samping{
     box-sizing: border-box;
     height: 100vh;
-    width: 170px;
-    text-decoration-color: rgb(83, 113, 170);
-    padding: 5px 1em;
+    width: 190px;
+    text-decoration-color: linear-gradient(rgb(232, 78, 70), rgba());
+    padding: 10px 1em;
     font-weight: bold;
-    background-color: rgb(142, 220, 220);
+    background-color: rgb(222, 229, 196);
     border-right: 1px solid red;
 }
 
 .bar-samping ul{
     list-style: none;
+    margin-top: 2em;
 }
 
 .bar-samping > ul > li:all{
@@ -48,14 +50,14 @@ body{
 }
 
 .bar-samping ul li.active a{
-    color: rgb(211, 118, 79);
+    color: rgb(76, 187, 220);
 }
 
 .bar-samping a {
     border-radius: .5em;
     padding: .85em;
     text-decoration: none;
-    color: rgb(92, 145, 180);
+    color: rgba(200, 84, 41);
     display: flex;
     align-items: center;
     gap: 1em;
@@ -88,11 +90,13 @@ body{
 } */
 
 .Informasi {
-    padding: min(2em 15%);
-    border-radius: 1em;
-    border: 1px solid;
-    max-width: fit-content;
-    margin-bottom: 20px;
+    padding: min(3em 15%);
+    border-radius: 0.6em;
+    border: 0.5px solid;
+    max-width: 1000px;
+    margin-top: 8em;
+    margin-left: 15em;
+    /* margin-bottom: 20px; */
 }
 
 .Informasi p {
@@ -102,4 +106,5 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     margin-bottom: 15px;
+    /* color:; */
 }
