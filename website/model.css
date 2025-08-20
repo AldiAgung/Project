@@ -13,52 +13,68 @@ html{
 }
 
 h1{
-    margin-left: 4em;
+    /* margin-left: 15em; */
+    /* position: middle; */
     margin-bottom: 1em;
 }
 
 body{
-    background-image: linear-gradient(rgba(231, 136, 136, 0.499), rgba(233, 47, 47, 0.547));
+    background-image: linear-gradient(rgba(255, 15, 15, 0.499), rgba(193, 115, 115, 0.547));
     /* background-repeat: no-repeat */
     min-height: 100vh;
     min-height: 100dvh;
     display: grid;
-    grid-template-columns: auto 1fr;
+    grid-template-columns: 190px 1fr;
 }
 
 .bar-samping{
     box-sizing: border-box;
     height: 100vh;
-    width: 170px;
-    text-decoration-color: rgb(83, 113, 170);
-    padding: 5px 1em;
+    width: 190px;
+    /* text-decoration-color: linear-gradient(rgb(232, 78, 70), rgba()); */
+    padding: 10px 1em;
     font-weight: bold;
-    background-color: rgb(142, 220, 220);
-    border-right: 1px solid red;
+
+    background-image: linear-gradient(to bottom, rgb(254, 48, 11, 0.3), rgb(126, 77, 50, 0.8));
+    border-right: 1px solid #1a1a1a;
+
 }
 
 .bar-samping ul{
     list-style: none;
+    margin-top: 2em;
 }
 
-.bar-samping > ul > li:all{
-    display: flex-end;
-    margin-top: 10em;
+.bar-samping > ul > li{
+    /* display: flex-end; */
+    margin-bottom: 1em;
 
-}
-
-.bar-samping ul li.active a{
-    color: rgb(211, 118, 79);
 }
 
 .bar-samping a {
     border-radius: .5em;
     padding: .85em;
+    /* text-decoration-line: solid rgb(98, 71, 9); */
     text-decoration: none;
-    color: rgb(92, 145, 180);
+    color: rgb(243, 16, 16);
     display: flex;
     align-items: center;
     gap: 1em;
+    transition: background-color 0.3s;
+}
+
+.bar-samping ul li.active a{
+    color: #87CEEB;
+
+    font-weight: 800;
+    text-decoration-thickness: 2px;
+    text-decoration-line: underline;
+}
+
+.bar-samping a:hover{
+    /* background-color: rgba(220, 193, 57, 0.1); */
+    text-decoration-line: underline;
+    transition: 2s ease-in-out;
 }
 
 /* .navigasi{
@@ -88,18 +104,21 @@ body{
 } */
 
 .Informasi {
-    padding: min(2em 15%);
-    border-radius: 1em;
-    border: 1px solid;
-    max-width: fit-content;
-    margin-bottom: 20px;
+    padding: min(3em 15%);
+    border-radius: 0.6em;
+    border: 0.5px solid black;
+    max-width: 1200px;
+    margin-top: 8em;
+    margin-left: 2em;
+    /* margin-bottom: 20px; */
 }
 
 .Informasi p {
     margin-top: 5px;
     margin-left: 1em;
-    position: justify;
+    text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     margin-bottom: 15px;
+    /* color:; */
 }
