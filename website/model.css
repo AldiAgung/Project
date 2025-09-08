@@ -13,8 +13,8 @@ html{
 }
 
 h1{
-    margin-left: 15em;
-    position: middle;
+    /* margin-left: 15em; */
+    /* position: middle; */
     margin-bottom: 1em;
 }
 
@@ -31,11 +31,13 @@ body{
     box-sizing: border-box;
     height: 100vh;
     width: 190px;
-    text-decoration-color: linear-gradient(rgb(232, 78, 70), rgba());
+    /* text-decoration-color: linear-gradient(rgb(232, 78, 70), rgba()); */
     padding: 10px 1em;
     font-weight: bold;
-    background-color: rgb(222, 229, 196);
-    border-right: 1px solid red;
+
+    background-image: linear-gradient(to bottom, rgb(254, 48, 11, 0.3), rgb(126, 77, 50, 0.8));
+    border-right: 1px solid #1a1a1a;
+
 }
 
 .bar-samping ul{
@@ -47,8 +49,6 @@ body{
     /* display: flex-end; */
     margin-bottom: 1em;
 
-.bar-samping ul li.active a{
-    color: rgb(76, 187, 220);
 }
 
 .bar-samping a {
@@ -56,7 +56,7 @@ body{
     padding: .85em;
     /* text-decoration-line: solid rgb(98, 71, 9); */
     text-decoration: none;
-    color: rgba(200, 84, 41);
+    color: rgb(243, 16, 16);
     display: flex;
     align-items: center;
     gap: 1em;
@@ -106,10 +106,10 @@ body{
 .Informasi {
     padding: min(3em 15%);
     border-radius: 0.6em;
-    border: 0.5px solid;
-    max-width: 1000px;
+    border: 0.5px solid black;
+    max-width: 1200px;
     margin-top: 8em;
-    margin-left: 15em;
+    margin-left: 2em;
     /* margin-bottom: 20px; */
 }
 
