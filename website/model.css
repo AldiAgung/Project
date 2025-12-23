@@ -12,17 +12,27 @@ html{
     margin-top: 1em;
 }
 
-h1{
-    /* margin-left: 15em; */
-    /* position: middle; */
+.konten-utama h1 {
+    margin-left: 6em;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 1em;
+}
+
+@media screen and (max-width: 960px){
+    .konten-utama h1{
+        margin-left: 70px;
+    }
+
+    .Informasi p {
+        margin-right: 7px;
+        display: flex;
+    }
 }
 
 body{
     background-image: linear-gradient(rgba(255, 15, 15, 0.499), rgba(193, 115, 115, 0.547));
     /* background-repeat: no-repeat */
     min-height: 100vh;
-    min-height: 100dvh;
     display: grid;
     grid-template-columns: 190px 1fr;
 }
@@ -31,11 +41,8 @@ body{
     box-sizing: border-box;
     height: 100vh;
     width: 190px;
-    /* text-decoration-color: linear-gradient(rgb(232, 78, 70), rgba()); */
     padding: 10px 1em;
-    font-weight: bold;
-
-    background-image: linear-gradient(to bottom, rgb(254, 48, 11, 0.3), rgb(126, 77, 50, 0.8));
+    background-image: linear-gradient(to bottom, rgba(172, 93, 79, 0.3), rgb(126, 77, 50, 0.8));
     border-right: 1px solid #1a1a1a;
 
 }
@@ -54,27 +61,27 @@ body{
 .bar-samping a {
     border-radius: .5em;
     padding: .85em;
-    /* text-decoration-line: solid rgb(98, 71, 9); */
     text-decoration: none;
-    color: rgb(243, 16, 16);
+    text-decoration-color: aqua;
+    color: #e5c594;
     display: flex;
     align-items: center;
     gap: 1em;
+    font-weight: 900;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
     transition: background-color 0.3s;
 }
 
 .bar-samping ul li.active a{
     color: #87CEEB;
-
-    font-weight: 800;
-    text-decoration-thickness: 2px;
-    text-decoration-line: underline;
+    font-weight: bold;
+    /* text-decoration-line: underline; */
 }
 
 .bar-samping a:hover{
-    /* background-color: rgba(220, 193, 57, 0.1); */
+    background-color: rgba(69, 212, 112, 0.427);
     text-decoration-line: underline;
-    transition: 2s ease-in-out;
+    transition: 0.4s ease-in-out;
 }
 
 /* .navigasi{
@@ -89,13 +96,6 @@ body{
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-}
-
-.Link:hover{
-    border-radius: 5px;
-    box-shadow: 5px;
-    text-decoration: underline;
-    text-decoration-color: rgba(208, 112, 95, 0.816);
 } */
 
 /* h1{
@@ -108,17 +108,29 @@ body{
     border-radius: 0.6em;
     border: 0.5px solid black;
     max-width: 1200px;
-    margin-top: 8em;
+    margin-top: 20em;
     margin-left: 2em;
     /* margin-bottom: 20px; */
 }
 
 .Informasi p {
     margin-top: 5px;
-    margin-left: 1em;
+    margin-left: .5em;
     text-align: justify;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     margin-bottom: 15px;
     /* color:; */
+}
+
+.kotak-bawah p{
+    margin-top: 5em;
+    max-width: auto;
+    margin-bottom: 0;
+    padding: 3px;
+    color: red;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.512));
+    border: 10px;
+    opacity: 1;
+    font-size: 1em;
 }

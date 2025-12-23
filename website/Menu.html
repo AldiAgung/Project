@@ -4,9 +4,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu`</title>
+    <link rel = "stylesheet" href = "gambar.css">
 </head>
 <body>
-    <h1> Halaman utama </h1>
-    <p> Halaman ini merupakan tempat bagi orang-orang yang mengunjungi informasi tentang organisasi anomali ini </p>
+    <h1> Beranda </h1>
+    <p> Halaman ini merupakan tempat bagi orang-orang yang ingin menemukan informasi tentang organisasi anomali ini </p>
+    <div class="gambar-galeri" id= "kotakGambarpenuh">
+        <img src = "" onclick="opengambarPenuh(this.src)">
+        <img src = "" onclick="opengambarPenuh(this.src)">
+        <img src = "" onclick="opengambarPenuh(this.src)">
+        <img src = "" onclick="opengambarPenuh(this.src)">
+    </div>
+
+    <div class="gambar-penuh">
+    <img src="" id= "gambarPenuh">
+    <span onclick = "closegambarPenuh()">X</span>
+    </div>
+
+    <li>
+        <button> Video</button>
+        <button> Galeri</button>
+        <button> Tentang</button>    
+        <button> Pengaturan</button>
+    </li>
+
+    <script>
+    const kotakGambarpenuh = document.getElementById("kotakGambarpenuh");
+    const gambarPenuh = document.getElementById("gambarPenuh");
+
+    function opengambarPenuh(pic){
+        kotakGambarpenuh.style.display = "flex";
+        gambarPenuh.src = pic;
+    }
+    </script>
+
 </body>
 </html>
