@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu`</title>
-    <link rel = "stylesheet" href = "gambar.css">
+    <title> Menu </title>
+    <link rel = "stylesheet" href = "menu.css">
 </head>
 <body>
     <h1> Beranda </h1>
-    <p> Halaman ini merupakan tempat bagi orang-orang yang ingin menemukan informasi tentang organisasi anomali ini </p>
+    <p> Halaman ini adalah tempat bagi orang-orang yang ingin menemukan informasi tentang organisasi anomali ini </p>
     <div class="gambar-galeri" id= "kotakGambarpenuh">
         <img src = "" onclick="opengambarPenuh(this.src)">
         <img src = "" onclick="opengambarPenuh(this.src)">
@@ -21,12 +21,13 @@
     <span onclick = "closegambarPenuh()">X</span>
     </div>
 
-    <li>
-        <button> Video</button>
-        <button> Galeri</button>
-        <button> Tentang</button>    
-        <button> Pengaturan</button>
-    </li>
+    <div class = "container-tombol">
+        <button class= "Tombol-pilihan" style= "float:center" onclick="location.href = 'video.html' ">  Video</button>
+        <button class= "Tombol-pilihan" onclick="location.href = '' ">  Galeri</button>
+        <button class= "Tombol-pilihan" onclick="location.href = '' ">  Tentang</button>    
+        <button class= "Tombol-pilihan" onclick="location.href = '' ">  Pengaturan</button>
+        <button class= "Tombol-pilihan" onclick="location.href = 'Main.html'"> Balik </button>
+    </div>
 
     <script>
     const kotakGambarpenuh = document.getElementById("kotakGambarpenuh");
