@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu`</title>
-    <link rel = "stylesheet" href = "gambar.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Menu </title>
+        <link rel = "stylesheet" href = "menu.css">
+    </head>
+    <body>
+    <button class= "Tombol-pengaturan " onclick="location.href = '' ">  Pengaturan</button>
     <h1> Beranda </h1>
-    <p> Halaman ini merupakan tempat bagi orang-orang yang ingin menemukan informasi tentang organisasi anomali ini </p>
+    <p> Halaman ini adalah tempat bagi orang-orang yang ingin menemukan informasi tentang organisasi anomali ini </p>
     <div class="gambar-galeri" id= "kotakGambarpenuh">
         <img src = "" onclick="opengambarPenuh(this.src)">
         <img src = "" onclick="opengambarPenuh(this.src)">
@@ -16,17 +17,31 @@
         <img src = "" onclick="opengambarPenuh(this.src)">
     </div>
 
-    <div class="gambar-penuh">
-    <img src="" id= "gambarPenuh">
-    <span onclick = "closegambarPenuh()">X</span>
+    <div class="karosel">
+        <div class="grup">
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+            <div class="card">4</div>
+            <div class="card">5</div>
+            <div class="card">6</div>
+        </div>
+        <div aria-hidden class="grup">
+            <div class="card">1</div>
+            <div class="card">2</div>
+            <div class="card">3</div>
+            <div class="card">4</div>
+            <div class="card">5</div>
+            <div class="card">6</div>
+        </div>
     </div>
 
-    <li>
-        <button> Video</button>
-        <button> Galeri</button>
-        <button> Tentang</button>    
-        <button> Pengaturan</button>
-    </li>
+    <div class = "wrapper-tombol">
+        <button class= "Tombol-pilihan" style= "float:center" onclick="location.href = 'video.html' ">  Video</button>
+        <button class= "Tombol-pilihan" onclick="location.href = '' ">  Galeri</button>
+        <button class= "Tombol-pilihan" onclick="location.href = '' ">  Tentang</button>    
+        <button class= "Tombol-pilihan4" onclick="location.href = 'Main.html'"> Balik </button>
+    </div>
 
     <script>
     const kotakGambarpenuh = document.getElementById("kotakGambarpenuh");

@@ -1,0 +1,101 @@
+body {
+    background-color: rgb(213, 147, 123) ;
+    box-sizing: border-box;
+}
+
+p {
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-left: 15px;
+}
+
+h1 {
+    margin-left: 2em;
+}
+/* .container-tombol{
+} */
+
+.Tombol-pilihan{
+    display: inline-block;
+    flex-wrap: wrap;
+    margin: 3em 2em;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    padding: 1em;
+    border-color: tomato;
+    color: rgb(22, 21, 21);
+    background-color: rgb(243, 145, 145);
+}
+
+.Tombol-pengaturan{
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: right;
+    right: 0;
+    padding: 0.50em;
+    border-color: tomato;
+    color: rgb(22, 21, 21);
+    background-color: rgb(243, 145, 145);
+}
+
+.Tombol-pilihan4{
+    display: block;
+    flex-wrap: wrap;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    padding: 1em;
+    border-color: tomato;
+    color: rgb(22, 21, 21);
+    background-color: rgb(243, 145, 145);
+}
+
+.karosel{
+    margin: 100px auto;
+    width: 90%;
+    /* border: 5px solid red; */
+    display: flex;
+    overflow: hidden;
+    gap: 1em;
+}
+
+.karosel::-webkit-scrollbar{
+    display: none;
+}
+
+.grup{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    animation: spin 20s infinite linear;
+    padding-right: 1em;
+}
+
+.card{
+    flex: 0 0 4em;
+    height: 4em;
+    padding: 1em;
+    background: coral;
+    font-size: 3rem;
+    border-radius: .2rem;
+    text-align: center;
+    align-items: center;
+}
+
+.wrapper-tombol{
+    text-align: center;
+}
+
+@keyframes spin {
+    from {translate: 0;}
+    to {translate: -100%;}
+}
