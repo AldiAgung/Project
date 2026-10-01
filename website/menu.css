@@ -1,6 +1,7 @@
 body {
     background-color: rgb(213, 147, 123) ;
     box-sizing: border-box;
+    height: 50vh;
 }
 
 p {
@@ -32,9 +33,10 @@ h1 {
 
 .Tombol-pengaturan{
     display: block;
-    cursor: pointer;
+    cursor: pointer;    
     position: absolute;
     border-radius: 10px;
+    margin-right: 2em;
     font-size: 18px;
     text-align: right;
     right: 0;

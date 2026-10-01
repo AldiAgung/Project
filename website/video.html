@@ -5,15 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video</title>
     <link rel = "stylesheet" href = "video.css">
-</head>
-<body>
-    <h1> Video</h1>
-    <h2>
-        Ini adalah halaman video untuk menampilkan konten video terkait organisasi kami. Beberapa video yang menampilkan kegiatan, wawancara, dan dokumentasi lainnya akan dimasukan ke dalam sini untuk memberikan gambaran lebih jelas tentang siapa kami dan apa yang kami lakukan.
-    </h2>
+    </head>
+    <body>
+    <div class = "kontainer-galeri"> 
+        <h1> Video</h1>
+        <p> Ini adalah halaman video untuk menampilkan konten video terkait organisasi kami. Beberapa video yang menampilkan kegiatan, wawancara, dan dokumentasi lainnya akan dimasukan ke dalam sini untuk memberikan gambaran lebih jelas tentang siapa kami dan apa yang kami lakukan. Beberapa dari video yang ada, merupakan kenang-kenangan dari apa yang kami selalu lakukan. Sekaligus pula, dengan adanya video-video tersebut dapat mengingatkan bagaimana waktu-waktu tersebut dialami.</p>
+        <P> Silakan melihat-lihat!!</P>
 
-    <p> Beberapa dari video yang ada, merupakan kenang-kenangan dari apa yang kami selalu lakukan. Sekaligus pula, dengan adanya video-video tersebut dapat mengingatkan bagaimana waktu-waktu tersebut dialami.</p>
+        <div class = "tombol-filter">
+            <button class = "filter-btn active" data-filter = "semua"> semua </button>
+            <button class = "filter-btn" data-filter = "event"> event </button>
+            <button class = "filter-btn" data-filter = "foto-biasa"> biasa </button>
+        </div>
 
-    <P> Silakan melihat-lihat!!</P>
-</body>
+            <div class = "grid-galeri">
+                <div class = "item-galeri semua">
+                    <img src = "gambar/IMG_20230314_170905.jpg" alt = "Furi1">
+                </div>
+
+                <div class = "item-galeri semua">
+                    <img src = "gambar/IMG_20230314_170905.jpg" alt = "Furi1">
+                </div>
+
+                <div class = "item-galeri semua">
+                    <img src = "gambar/IMG_20230314_170905.jpg" alt = "Furi1">
+                </div>
+            </div>
+        </div>
+    <script src = "video.js"> </script>
+    </body>
 </html>
